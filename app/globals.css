@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1B2B4B;
+  --navy-deep: #111E35;
+  --teal: #2A9D8F;
+  --teal-light: #3DB8A8;
+  --teal-pale: #E6F4F2;
+  --sand: #F7F3EE;
+  --warm-white: #FDFCFB;
+  --text-primary: #1a1a2e;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  
+  --background: var(--warm-white);
+  --foreground: var(--text-primary);
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
+  --color-teal-pale: var(--teal-pale);
+  --color-sand: var(--sand);
+  --color-warm-white: var(--warm-white);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 300;
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
+.delay-5 { animation-delay: 0.7s; }

@@ -1,0 +1,36 @@
+import Link from "next/link";
+
+export function Footer() {
+  return (
+    <footer className="bg-navy-deep py-10 px-[6%] lg:px-[8%] flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="font-serif text-white text-lg">
+        LM <span className="text-teal">Property</span>
+      </div>
+
+      <p className="text-white/35 text-sm">
+        © 2025 LM Property Management. All rights reserved.
+      </p>
+
+      <div className="flex gap-6">
+        <Link
+          href="#"
+          className="text-white/40 text-sm hover:text-teal transition-colors"
+        >
+          Privacy Policy
+        </Link>
+        <Link
+          href="#"
+          className="text-white/40 text-sm hover:text-teal transition-colors"
+        >
+          Terms of Service
+        </Link>
+        <Link
+          href="https://lmfit.uk"
+          className="text-white/40 text-sm hover:text-teal transition-colors"
+        >
+          LMFIT Fitness
+        </Link>
+      </div>
+    </footer>
+  );
+}
