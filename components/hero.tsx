@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Logo } from "./logo";
 
 export function Hero() {
   return (
@@ -64,10 +63,97 @@ export function Hero() {
       </div>
 
       {/* Right Visual */}
-      <div className="hidden lg:flex relative overflow-hidden items-center justify-center">
+      <div className="hidden lg:block relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a5f] via-[#0d1f3c] to-[#162940]" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep to-transparent z-10" />
-        <Logo className="w-72 h-56 text-teal/40 relative z-20" />
+        <div className="absolute inset-0 flex items-center justify-center opacity-35">
+          <svg
+            className="w-full h-full"
+            viewBox="0 0 500 600"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="60"
+              y="80"
+              width="380"
+              height="440"
+              stroke="rgba(42,157,143,0.3)"
+              strokeWidth="1"
+            />
+            <rect
+              x="90"
+              y="110"
+              width="320"
+              height="380"
+              stroke="rgba(42,157,143,0.2)"
+              strokeWidth="0.5"
+            />
+            <line
+              x1="60"
+              y1="520"
+              x2="440"
+              y2="520"
+              stroke="rgba(42,157,143,0.4)"
+              strokeWidth="1"
+            />
+            <rect
+              x="140"
+              y="350"
+              width="220"
+              height="170"
+              stroke="rgba(42,157,143,0.35)"
+              strokeWidth="0.8"
+            />
+            <rect
+              x="170"
+              y="380"
+              width="80"
+              height="80"
+              stroke="rgba(42,157,143,0.25)"
+              strokeWidth="0.5"
+            />
+            <rect
+              x="290"
+              y="380"
+              width="60"
+              height="80"
+              stroke="rgba(42,157,143,0.25)"
+              strokeWidth="0.5"
+            />
+            <rect
+              x="180"
+              y="130"
+              width="140"
+              height="180"
+              stroke="rgba(42,157,143,0.3)"
+              strokeWidth="0.8"
+            />
+            <line
+              x1="180"
+              y1="220"
+              x2="320"
+              y2="220"
+              stroke="rgba(42,157,143,0.15)"
+              strokeWidth="0.5"
+            />
+            <circle
+              cx="250"
+              cy="90"
+              r="8"
+              stroke="rgba(42,157,143,0.5)"
+              strokeWidth="0.8"
+            />
+            <line
+              x1="250"
+              y1="98"
+              x2="250"
+              y2="130"
+              stroke="rgba(42,157,143,0.3)"
+              strokeWidth="0.8"
+            />
+          </svg>
+        </div>
       </div>
     </section>
   );
