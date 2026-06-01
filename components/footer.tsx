@@ -1,10 +1,14 @@
 import Link from "next/link";
+import { Logo } from "./logo";
 
 export function Footer() {
   return (
     <footer className="bg-navy-deep py-10 px-[6%] lg:px-[8%] flex flex-col md:flex-row items-center justify-between gap-4">
-      <div className="font-serif text-white text-lg">
-        LM <span className="text-teal">Property</span>
+      <div className="flex items-center gap-3">
+        <Logo className="w-8 h-6 text-white" />
+        <span className="font-serif text-white text-lg">
+          LM <span className="text-teal">Property</span>
+        </span>
       </div>
 
       <p className="text-white/35 text-sm">
