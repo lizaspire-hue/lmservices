@@ -10,11 +10,11 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-5 bg-navy/[0.97] backdrop-blur-md border-b border-white/[0.06]">
-      <Link href="/" className="flex items-center gap-3">
-        <Logo className="w-10 h-8 text-white" />
+      <Link href="/" className="flex items-center gap-4">
         <span className="font-serif text-xl text-white tracking-wide">
           LM <span className="text-teal">Property</span>
         </span>
+        <Logo className="w-14 h-11 text-white" />
       </Link>
 
       {/* Desktop Links */}

@@ -4,11 +4,11 @@ import { Logo } from "./logo";
 export function Footer() {
   return (
     <footer className="bg-navy-deep py-10 px-[6%] lg:px-[8%] flex flex-col md:flex-row items-center justify-between gap-4">
-      <div className="flex items-center gap-3">
-        <Logo className="w-8 h-6 text-white" />
+      <div className="flex items-center gap-4">
         <span className="font-serif text-white text-lg">
           LM <span className="text-teal">Property</span>
         </span>
+        <Logo className="w-10 h-8 text-white" />
       </div>
 
       <p className="text-white/35 text-sm">
